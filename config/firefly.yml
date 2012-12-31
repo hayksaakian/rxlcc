@@ -1,0 +1,4 @@
+firefly:
+  hostname: 'rxlcc.herokuapp.com'
+  api_key: 'test'
+  session_secret: '100RwmqczqhzqrgrNrcxyBmmu0gTdo11mqlBHbLQyrIDWOkozcMfeWAGgprptjX'
