@@ -212,6 +212,9 @@ module Firefly
       configuration_file ||= File.join(Firefly.root, 'config/firefly.yml')
       @config = Firefly::Config.new(configuration_file)
 
+      # suggested by iain on stackoverflow
+      @config[:database_url] = ENV["DATABASE_URL"]
+
       begin
         # TODO: Check for proper database collation with ActiveRecord
         # check_mysql_collation
