@@ -17,3 +17,5 @@ test:
   username: firefly
   password:
 
+production:
+  host: ENV['DATABASE_URL']
